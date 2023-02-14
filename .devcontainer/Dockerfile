@@ -11,8 +11,11 @@ RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
 # Set `DEVCONTAINER` environment variable to help with orientation
 ENV DEVCONTAINER=true
 
+# install protoc
+RUN apt install -y protobuf-compiler
+
 # install AS SDK
 RUN yarn global add @roamin/sdk-as-cli@1.0.4
 
-# install AS SDK
+# install Local Koinos
 RUN yarn global add @roamin/local-koinos@0.4.9
