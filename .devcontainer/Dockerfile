@@ -15,7 +15,7 @@ ENV DEVCONTAINER=true
 RUN apt install -y protobuf-compiler
 
 # install AS SDK
-RUN yarn global add @roamin/sdk-as-cli@1.1.4
+RUN yarn global add @roamin/sdk-as-cli@1.1.5
 
 # install Local Koinos
-RUN yarn global add @roamin/local-koinos@0.4.12
+RUN yarn global add @roamin/local-koinos@0.4.16
